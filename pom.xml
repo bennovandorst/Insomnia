@@ -17,6 +17,7 @@
     </properties>
 
     <build>
+        <finalName>Insomnia</finalName>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
             <plugin>
