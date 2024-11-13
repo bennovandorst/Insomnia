@@ -24,11 +24,5 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Set up Maven
-        uses: actions/setup-java@v3
-        with:
-          maven-version: '3.8.1'
-          distribution: ''
-
       - name: Build with Maven
         run: mvn clean install --file pom.xml
