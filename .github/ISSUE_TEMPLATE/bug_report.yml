@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report an issue with Insomnia
+labels: bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for reporting a bug! Please make sure to fill out all sections below to help us resolve the issue quickly.**
+
+  - type: input
+    attributes:
+      label: Minecraft Version
+      description: Which version of Minecraft are you using? (e.g. 1.20)
+      placeholder: e.g. 1.20
+      required: true
+
+  - type: input
+    attributes:
+      label: Plugin Version
+      description: Which version of the plugin are you using? (e.g. INS-1.0.0)
+      placeholder: e.g. INS-1.0.0
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the Bug
+      description: Please provide a detailed description of the bug you encountered, including steps to reproduce it.
+      placeholder: e.g. "When I try to use the command `/example`, the server crashes."
+      required: true
+
+  - type: input
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the bug, if applicable. (e.g. "1. Start the server 2. Execute the command")
+      placeholder: e.g. "1. Start the server 2. Execute the command"
+      required: true
+
+  - type: input
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: e.g. "The plugin should execute the command without crashing."
+
+  - type: input
+    attributes:
+      label: Actual Behavior
+      description: What actually happened when the bug occurred?
+      placeholder: e.g. "The server crashes when using the command."
+
+  - type: input
+    attributes:
+      label: Error Logs
+      description: If there are any error logs, please provide them here.
+      placeholder: e.g. "Please copy and paste any relevant error logs from the server console or logs folder."
+
+  - type: input
+    attributes:
+      label: Server Type
+      description: What server type are you using? (e.g. Paper, Spigot, Bukkit, etc.)
+      placeholder: e.g. "Paper"
+      required: true
+
+  - type: input
+    attributes:
+      label: Server Version
+      description: What version of the server are you running?
+      placeholder: e.g. "Paper 1.20"
+      required: true
+
+  - type: input
+    attributes:
+      label: Additional Information
+      description: Any additional information or context that might help us fix the bug.
+      placeholder: e.g. "The bug only happens when the plugin is loaded with a specific configuration."
