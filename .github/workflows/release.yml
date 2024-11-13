@@ -26,17 +26,7 @@ jobs:
         id: version
         run: echo "version=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
 
-      - name: Check commit message for skip phrase
-        id: skip_check
-        run: |
-          if [[ "${{ github.event.head_commit.message }}" == *"[rel-skip]"* ]]; then
-            echo "skip_release=true" >> $GITHUB_ENV
-          else
-            echo "skip_release=false" >> $GITHUB_ENV
-        shell: bash
-
       - name: Publish JAR as Release
-        if: env.skip_release == 'false'
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
