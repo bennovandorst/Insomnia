@@ -8,11 +8,12 @@ public final class Insomnia extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         // Add colors??
         getLogger().info("+=========================================+");
         getLogger().info("Insomnia Initiated! (Build: " + getDescription().getVersion() + ")");
         getLogger().info("+=========================================+");
-        Bukkit.getPluginManager().registerEvents(new onPlayerSleepEvent(), this);
+        Bukkit.getPluginManager().registerEvents(new onPlayerSleepEvent(this), this);
     }
 
     @Override
