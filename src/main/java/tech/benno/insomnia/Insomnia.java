@@ -1,5 +1,6 @@
 package tech.benno.insomnia;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.benno.insomnia.listeners.onPlayerSleepEvent;
@@ -13,6 +14,8 @@ public final class Insomnia extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        int pluginId = 23892;
+        Metrics metrics = new Metrics(this, pluginId);
         saveDefaultConfig();
 
         getLogger().info(CYAN + "+=========================================+" + RESET);
