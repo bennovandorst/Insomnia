@@ -31,6 +31,8 @@ public final class Insomnia extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info(CYAN + "+=========================================+" + RESET);
+        getLogger().info(BLUE + "Insomnia Disabled!" + RESET + YELLOW + " (Build: " + getDescription().getVersion() + ")" + RESET);
+        getLogger().info(CYAN + "+=========================================+" + RESET);
     }
 }
