@@ -24,9 +24,13 @@ public class onPlayerSleepEvent implements Listener {
 
         if (time >= 12000 && time < 24000) {
             e.setCancelled(true);
+
             String sleepMessage = plugin.getConfig().getString("messages.sleep");
-            sleepMessage = ChatColor.translateAlternateColorCodes('&', sleepMessage);
-            player.sendMessage(sleepMessage);
+
+            if (sleepMessage != null && !sleepMessage.isEmpty()) {
+                sleepMessage = ChatColor.translateAlternateColorCodes('&', sleepMessage);
+                player.sendMessage(sleepMessage);
+            }
         }
     }
 }
