@@ -15,11 +15,10 @@ public final class Insomnia extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        PerformanceNode.start("Insomnia.onEnable");
         int pluginId = 23892;
         Metrics metrics = new Metrics(this, pluginId);
         saveDefaultConfig();
-
-        PerformanceNode.start("Insomnia.onEnable");
 
         getLogger().info(CYAN + "+=========================================+" + RESET);
         getLogger().info(BLUE + "Insomnia Initiated!" + RESET + YELLOW + " (Build: " + getDescription().getVersion() + ") [" + PerformanceNode.calc("Insomnia.onEnable") + "ms]" + RESET);
