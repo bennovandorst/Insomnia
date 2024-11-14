@@ -7,6 +7,11 @@ import tech.benno.insomnia.commands.ReloadCommand;
 import tech.benno.insomnia.listeners.onPlayerSleepEvent;
 import tech.benno.insomnia.utils.PerformanceNode;
 
+/**
+ * @author bennovandorst
+ * @package tech.benno.insomnia
+ * @date 13/11/2024
+ */
 public final class Insomnia extends JavaPlugin {
 
     private static final String RESET = "\u001B[0m";
