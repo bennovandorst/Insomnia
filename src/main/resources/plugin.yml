@@ -1,5 +1,5 @@
 name: Insomnia
-version: 'INS-1.1.1'
+version: 'INS-1.1.2'
 main: tech.benno.insomnia.Insomnia
 api-version: '1.21'
 commands:
