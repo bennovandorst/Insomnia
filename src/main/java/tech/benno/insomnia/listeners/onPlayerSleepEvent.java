@@ -26,8 +26,11 @@ public class onPlayerSleepEvent implements Listener {
             e.setCancelled(true);
 
             String sleepMessage = plugin.getConfig().getString("messages.sleep");
-            sleepMessage = ChatColor.translateAlternateColorCodes('&', sleepMessage);
-            player.sendMessage(sleepMessage);
+
+            if (sleepMessage != null && !sleepMessage.isEmpty()) {
+                sleepMessage = ChatColor.translateAlternateColorCodes('&', sleepMessage);
+                player.sendMessage(sleepMessage);
+            }
         }
     }
 }

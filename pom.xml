@@ -6,7 +6,7 @@
 
     <groupId>tech.benno</groupId>
     <artifactId>insomnia</artifactId>
-    <version>INS-1.1.1</version>
+    <version>INS-1.1.2</version>
     <packaging>jar</packaging>
 
     <name>insomnia</name>
