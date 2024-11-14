@@ -6,6 +6,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * @author bennovandorst
+ * @package tech.benno.insomnia.commands
+ * @date 13/11/2024
+ */
 public class ReloadCommand implements CommandExecutor {
 
     private final JavaPlugin plugin;

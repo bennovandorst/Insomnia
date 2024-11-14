@@ -8,6 +8,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerBedEnterEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * @author bennovandorst
+ * @package tech.benno.insomnia.listeners
+ * @date 13/11/2024
+ */
 public class onPlayerSleepEvent implements Listener {
 
     private final JavaPlugin plugin;

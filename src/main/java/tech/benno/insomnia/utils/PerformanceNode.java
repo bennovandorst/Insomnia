@@ -2,6 +2,11 @@ package tech.benno.insomnia.utils;
 
 import java.util.HashMap;
 
+/**
+ * @author bennovandorst
+ * @package tech.benno.insomnia.utils
+ * @date 14/11/2024
+ */
 public class PerformanceNode {
 
     public static HashMap<String, Long> timings = new HashMap<String, Long>();
@@ -16,7 +21,7 @@ public class PerformanceNode {
 
         return timing;
     }
-    
+
     public static Long check(String psw) {
         return System.currentTimeMillis() - timings.get(psw);
     }
