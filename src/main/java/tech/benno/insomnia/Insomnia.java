@@ -3,6 +3,7 @@ package tech.benno.insomnia;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import tech.benno.insomnia.commands.ReloadCommand;
 import tech.benno.insomnia.listeners.onPlayerSleepEvent;
 import tech.benno.insomnia.utils.PerformanceNode;
 
@@ -25,6 +26,7 @@ public final class Insomnia extends JavaPlugin {
         getLogger().info(CYAN + "+=========================================+" + RESET);
 
         Bukkit.getPluginManager().registerEvents(new onPlayerSleepEvent(this), this);
+        this.getCommand("ir").setExecutor(new ReloadCommand(this));
     }
 
     @Override
